@@ -11,14 +11,14 @@ import {
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title: "Demin Jacket",
+    description: "Is this item still available?",
     image: require("../assets/sebastian.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title: "Couch",
+    description: "Can you do $600?",
     image: require("../assets/sebastian.jpg"),
   },
 ];
@@ -54,8 +54,8 @@ function MessagesScreen(props) {
           setMessages([
             {
               id: 2,
-              title: "T2",
-              description: "D2",
+              title: "Couch",
+              description: "Never mind, I found a couch. Thanks!",
               image: require("../assets/sebastian.jpg"),
             },
           ]);
