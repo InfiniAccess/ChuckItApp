@@ -16,24 +16,12 @@ import RegisterScreen from './app/screens/RegisterScreen';
 import ListingEditScreen from './app/screens/ListingEditScreen';
 import { Button, Image } from 'react-native';
 import ImageInput from './app/components/ImageInput';
+import ImageInputList from './app/components/ImageInputList';
 
 export default function App() {
-  const [imageUri, setImageUri] = useState();
 
-  const requestPermission = async () => {
-    const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (!result.granted) alert('You need to enable permission to access the library.');
-  };
-
-  useEffect(() => {
-    requestPermission();
-  }, [])
-  
 
   return (
-    <Screen>
-      <ImageInput imageUri={imageUri}
-      onChangeImage={uri => setImageUri(uri)}/>
-    </Screen>
+    <ListingEditScreen></ListingEditScreen>
   );
 }
