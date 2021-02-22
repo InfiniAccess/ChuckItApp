@@ -19,7 +19,7 @@ const initialMessages = [
     id: 2,
     title: "Sebastian Schreuder",
     description:
-      "I'm interested in this item. Can you sell it now?",
+      "I'm interested in this item. When will you be able to post it?",
     image: require("../assets/sebastian.jpg"),
   },
 ];
@@ -56,7 +56,7 @@ function MessagesScreen(props) {
             {
               id: 2,
               title: "Sebastian Schreuder",
-              description: "Nevermind!",
+              description: "Thanks, I found one!",
               image: require("../assets/sebastian.jpg"),
             },
           ]);
